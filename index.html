@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالات HTML - جوتكي للتعليم</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background: #e8491d;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #35424a;
+        }
+
+        h3 {
+            color: #e8491d;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #35424a;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #e8491d;
+        }
+
+        pre {
+            background: #f8f8f8;
+            padding: 10px;
+            border: 1px solid #ccc;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>مقالات HTML</h1>
+    </header>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="programming.html">مقالات البرمجة</a>
+        <a href="cybersecurity.html">مقالات الأمن السيبراني</a>
+        <a href="contact.html">تواصل معنا</a>
+        <a href="suggestions.html">اقتراحات</a>
+    </nav>
+
+    <div class="container">
+        <h2>أساسيات HTML</h2>
+        <p>HTML (HyperText Markup Language) هي اللغة الأساسية المستخدمة لإنشاء صفحات الويب. تُستخدم HTML لتحديد بنية المحتوى وتنسيقه، وتعتبر الأساس الذي يبنى عليه تطوير الويب. في هذا المقال، سنستعرض أساسيات HTML ونستكشف كيفية استخدامها لإنشاء صفحات ويب بسيطة.</p>
+
+        <h3>1. ما هو HTML؟</h3>
+        <p>HTML هي لغة توصيف تُستخدم لإنشاء هيكل الصفحات على الإنترنت. تعتمد على "وسوم" (Tags) تحدد كيفية عرض المحتوى. كل وسم يُستخدم في HTML يكون محاطًا بأقواس زاوية &lt; &gt;.</p>
+
+        <h3>2. الهيكل الأساسي لصفحة HTML</h3>
+        <p>تتكون صفحة HTML من مجموعة من العناصر الأساسية. إليك هيكل صفحة HTML بسيط:</p>
+        <pre>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>عنوان الصفحة</title>
+</head>
+<body>
+    <h1>مرحبًا بكم في HTML!</h1>
+    <p>هذه فقرة بسيطة تشرح أساسيات HTML.</p>
+</body>
+</html>
+        </pre>
+        <p><strong>&lt;!DOCTYPE html&gt;</strong>: تُستخدم لتحديد نوع المستند، وتخبر المتصفح بأن هذه الصفحة تستخدم HTML5.</p>
+        <p><strong>&lt;html&gt;</strong>: وسم الجذر الذي يحتوي على كل محتوى الصفحة.</p>
+        <p><strong>&lt;head&gt;</strong>: يحتوي على معلومات غير مرئية عن الصفحة، مثل العنوان وروابط أنماط CSS.</p>
+        <p><strong>&lt;title&gt;</strong>: يحدد عنوان الصفحة الذي يظهر في شريط عنوان المتصفح.</p>
+        <p><strong>&lt;body&gt;</strong>: يحتوي على المحتوى المرئي للصفحة.</p>
+
+        <h3>3. الوسوم الأساسية</h3>
+        <h4>3.1 العناوين</h4>
+        <p>تستخدم الوسوم &lt;h1&gt; إلى &lt;h6&gt; لتحديد العناوين. &lt;h1&gt; هو أعلى مستوى من العناوين و&lt;h6&gt; هو الأدنى:</p>
+        <pre>
+<h1>عنوان رئيسي</h1>
+<h2>عنوان فرعي</h2>
+        </pre>
+
+        <h4>3.2 الفقرات</h4>
+        <p>تستخدم الوسم &lt;p&gt; لإنشاء فقرة:</p>
+        <pre>
+<p>هذه فقرة نصية.</p>
+        </pre>
+
+        <h4>3.3 الروابط</h4>
+        <p>تستخدم الوسم &lt;a&gt; لإنشاء روابط:</p>
+        <pre>
+<a href="https://www.example.com">زيارة المثال</a>
+        </pre>
+
+        <h4>3.4 الصور</h4>
+        <p>يمكن إضافة صور باستخدام الوسم &lt;img&gt;:</p>
+        <pre>
+<img src="image.jpg" alt="وصف الصورة">
+        </pre>
+        <p><strong>src</strong>: تحدد مسار الصورة.<br><strong>alt</strong>: نص بديل يظهر إذا لم يتم تحميل الصورة.</p>
+
+        <h3>4. القوائم</h3>
+        <p>يمكن إنشاء قوائم باستخدام الوسوم &lt;ul&gt; (قائمة غير مرتبة) و&lt;ol&gt; (قائمة مرتبة):</p>
+        <pre>
+<ul>
+    <li>العنصر الأول</li>
+    <li>العنصر الثاني</li>
+</ul>
+
+<ol>
+    <li>العنصر الأول</li>
+    <li>العنصر الثاني</li>
+</ol>
+        </pre>
+
+        <h3>5. الجداول</h3>
+        <p>تستخدم الوسوم &lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, و&lt;th&gt; لإنشاء الجداول:</p>
+        <pre>
+<table>
+    <tr>
+        <th>رأس العمود 1</th>
+        <th>رأس العمود 2</th>
+    </tr>
+    <tr>
+        <td>خلية 1</td>
+        <td>خلية 2</td>
+    </tr>
+</table>
+        </pre>
+
+        <h3>6. التنسيق</h3>
+        <p>يمكن تنسيق النصوص باستخدام الوسوم مثل:</p>
+        <ul>
+            <li><strong>&lt;strong&gt;</strong>: لتحديد نص عريض.</li>
+            <li><strong>&lt;em&gt;</strong>: لتحديد نص مائل.</li>
+            <li><strong>&lt;u&gt;</strong>: لتحديد نص تحت الخط.</li>
+        </ul>
+
+        <h3>7. التعليقات</h3>
+        <p>يمكن إضافة تعليقات في كود HTML باستخدام:</p>
+        <pre>
+<!-- هذا تعليق -->
+        </pre>
+        <p>التعليقات لا تظهر في المتصفح وتستخدم لتوضيح أجزاء من الكود.</p>
+
+        <h3>الخاتمة</h3>
+        <p>HTML هي أساس تطوير الويب، وفهم الأساسيات يمكن أن يساعدك في بناء صفحات ويب بسيطة. من خلال استخدام الوسوم الأساسية التي تم استعراضها، يمكنك البدء في إنشاء محتوى جذاب وتفاعلي. استمر في التعلم والتجربة لتحسين مهاراتك في HTML!</p>
+        
+        <h3>اقتراحات</h3>
+        <p>لديك اقتراحات حول مقالات HTML؟ اترك اقتراحك هنا:</p>
+        <form>
+            <textarea placeholder="اكتب اقتراحك هنا..." rows="4"></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+</body>
+</html>
